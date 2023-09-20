@@ -18,7 +18,7 @@ body {
     gap: 100px;
 }
 
-.container {
+.div-container {
     border: 5px solid rgb(10, 136, 143);
     width: 512px;
     height: 512px;
@@ -44,17 +44,60 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 40px;
 }
 
-.reset {}
+.reset {
+    background-color: rgb(115, 114, 114);
+    color: white;
+    width: 75px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 1px rgb(255, 255, 255);
+}
+
+.slider {
+    border: 2px solid rgb(62, 62, 55);
+    padding: 5px;
+}
+
+.grid-label {
+    color: white;
+    font-weight: 800;
+    text-align: center;
+}
 
 .range {
     display: flex;
     gap: 5px;
+    margin-top: 5px;
 }
 
 .range div {
+    color: white;
+}
+
+.bg-color {
+    color: white;
+    display: flex;
+    gap: 10px;
+}
+
+.bg {
+    background-color: rgb(0, 0, 0);
+}
+
+.bg-color label {
+    transform: translateY(4px);
+}
+
+.rainbow {
+    color: white;
+    display: flex;
+    gap: 10px;
+}
+
+label {
     color: white;
 }
 

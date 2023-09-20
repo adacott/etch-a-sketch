@@ -18,14 +18,30 @@
 
         <div class="button-container">
             <button class="reset">Reset</button>
-            <div class="range">
-                <div class="min-value">16</div>
-                <input type="range" name="Grid-size" class="grid-size" min="16" max="100" value="16" step="4">
-                <div class="max-value">100</div>
+
+            <div class="slider">
+                <div class="grid-label">Grid-Size: </div>
+                <div class="range">
+                    <div>16</div>
+                    <input type="range" name="Grid-size" class="grid-size" min="16" max="64" value="16" step="4">
+                    <div>64</div>
+                </div>
             </div>
+
+            <div class="bg-color">
+                <label for="bg">Line Color</label>
+                <input type="color" class="bg" value="#FFFF00">
+            </div>
+
+            <div class="rainbow">
+                <label for="rainbow">Rainbow</label>
+                <input type="checkbox" value="Rainbow:">
+
+            </div>
+
         </div>
 
-        <div class="container">
+        <div class="div-container">
 
         </div>
 
