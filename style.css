@@ -23,7 +23,7 @@ body {
     height: 512px;
     display: flex;
     flex-wrap: wrap;
-    transform: translateX(120px);
+    /* transform: translateX(50px); */
 }
 
 .div-base {
@@ -34,3 +34,6 @@ body {
 .hover {
     background-color: aqua;
 }
+
+/* Figure out how to use css to auto-adjust the size of the container based on the resolution
+of the device. Ideally, I want to resize for 1920x1080, 2560x1440, and for a middle ground */
