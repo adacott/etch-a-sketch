@@ -44,4 +44,4 @@ divs.forEach(dv => dv.addEventListener("mouseover", changeBackground));
 
 
 
-console.log(divs);
+// console.log(divs);

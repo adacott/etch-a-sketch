@@ -15,6 +15,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 100px;
 }
 
 .container {
@@ -33,6 +34,28 @@ body {
 
 .hover {
     background-color: aqua;
+}
+
+.button-container {
+    border: 5px solid teal;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.reset {}
+
+.range {
+    display: flex;
+    gap: 5px;
+}
+
+.range div {
+    color: white;
 }
 
 /* Figure out how to use css to auto-adjust the size of the container based on the resolution
