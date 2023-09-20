@@ -1,15 +1,15 @@
-cont = document.querySelector(".container");
+const cont = document.querySelector(".container");
+let gds = document.querySelector(".grid-size");
 
 // Retrieve height and width of container to calculate grid size
-let cw = cont.clientWidth;
-let ch = cont.clientHeight;
-const grid = 16;
-const w = cw / grid + "px";
-const h = ch / grid + "px";
+const cw = cont.clientWidth;
+const ch = cont.clientHeight;
+const w = cw / gds.value + "px";
+const h = ch / gds.value + "px";
 
 
 // For a 16x16 grid, create 256 squares that are scaled based on width and height of the container
-for (i = 1; i <= (grid * grid); i++) {
+for (i = 1; i <= (gds.value * gds.value); i++) {
     const nm = document.createElement("div");
     nm.style.border = "1px solid purple";
     nm.classList.add("div-base");
@@ -35,13 +35,15 @@ function changeBackground(e) {
     }
 }
 
-divs = document.querySelectorAll(".div-base");
-// divs.forEach(dv => dv.addEventListener("mouseover", function (e) {
-//     console.log(e.target.className);
-// }));
+function resetBackground() {
+    divs = document.querySelectorAll(".hover");
+    divs.forEach(dv => dv.classList.remove("hover"));
+}
 
+let divs = document.querySelectorAll(".div-base");
 divs.forEach(dv => dv.addEventListener("mouseover", changeBackground));
 
+const btn = document.querySelector(".reset");
+btn.addEventListener("click", resetBackground);
+console.log(btn);
 
-
-// console.log(divs);
