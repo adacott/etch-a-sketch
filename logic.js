@@ -103,17 +103,3 @@ gds.addEventListener("change", modifyGrid);
 colorPicker.addEventListener("change", userColor);
 colorPicker.addEventListener("input", userColor);
 rainbow.addEventListener("input", rainbowToggle);
-
-
-
-
-//TODO: 
-// Create a way for changeBackground to access and use the color input.
-// Create a rainbow function that when rainbow is checkmarked it changes "changeBackground" function
-// to randomly select the colors
-
-// May need to refactor my code to change the background color instead of adding and removing
-// a class -- it is just such a MASSIVE pain in the fucking ass to select something thats not
-// in the DOM tree.
-
-
